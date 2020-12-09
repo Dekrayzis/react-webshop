@@ -68,10 +68,10 @@ const StoreItem = ({
                   aria-hidden="false"
                 />
                 <div class="slide-wrapper">
-                  <a href="/products/ghost%C2%AE-gamer?variant=33699054715012">
+                  <a href="/">
                     <img
-                      src="//cdn.shopify.com/s/files/1/0094/4842/3486/products/GamerPeach_400x.png?v=1600093547"
-                      alt="GHOST® GAMER"
+                      src="/assets/products/GamerPeach_400x.webp"
+                      alt="VICENCO® GAMER"
                     />
                   </a>
                 </div>
@@ -88,8 +88,8 @@ const StoreItem = ({
           <div class="product_info">
             <div class="price_title">
               <div class="title">
-                <a href="/products/ghost%C2%AE-gamer" class="h5">
-                  Ghost® gamer
+                <a href="/products/VICENCO%C2%AE-gamer" class="h5">
+                  VICENCO® gamer
                 </a>
                 <span class="tag">GAMER</span>
               </div>
@@ -108,7 +108,7 @@ const StoreItem = ({
                   <FaShoppingCart />
                   {inStock ? "Add To Cart" : "Sold Out"}
                 </button>
-                <a href="/products/ghost%C2%AE-gamer" class="btn details">
+                <a href="/products/VICENCO%C2%AE-gamer" class="btn details">
                   <FaSignal />
                   Details
                 </a>

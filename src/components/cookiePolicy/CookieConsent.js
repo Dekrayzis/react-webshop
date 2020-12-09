@@ -11,7 +11,7 @@ const CookieConsent = () => {
         accept these cookies?
         <a
           class="cc-link"
-          href="https://uk.ghostlifestyle.com/pages/terms-and-service"
+          href="https://uk.vicencolifestyle.com/pages/terms-and-service"
           target="_blank"
         >
           Privacy Policy

@@ -16,8 +16,8 @@ const Privacy = () => {
         <p>
           <span>
             Please read these Terms and Conditions ("Terms", "Terms and
-            Conditions") carefully before using the ghostlifestyle.com website
-            (the "Service") operated by Ghost, LLC ("us", "we", or "our").
+            Conditions") carefully before using the vicencolifestyle.com website
+            (the "Service") operated by VICENCO, LLC ("us", "we", or "our").
           </span>
         </p>
         <p>
@@ -169,14 +169,14 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            Ghost, LLC has the right but not the obligation to monitor and edit
-            all Content provided by users.
+            VICENCO, LLC has the right but not the obligation to monitor and
+            edit all Content provided by users.
           </span>
         </p>
         <p>
           <span>
             In addition, Content found on or through this Service are the
-            property of Ghost, LLC or used with permission. You may not
+            property of VICENCO, LLC or used with permission. You may not
             distribute, modify, transmit, reuse, download, repost, copy, or use
             said Content, whether in whole or in part, for commercial purposes
             or for personal gain, without express advance written permission
@@ -240,7 +240,7 @@ const Privacy = () => {
             If you are a copyright owner, or authorized on behalf of one, and
             you believe that the copyrighted work has been copied in a way that
             constitutes copyright infringement, please submit your claim via
-            email to web@ghostlifestyle.com, with the subject line: "Copyright
+            email to web@vicencolifestyle.com, with the subject line: "Copyright
             Infringement" and include in your claim a detailed description of
             the alleged Infringement as detailed below, under "DMCA Notice and
             Procedure for Copyright Infringement Claims"
@@ -308,7 +308,7 @@ const Privacy = () => {
         <p>
           <span>
             You can contact our Copyright Agent via email at
-            web@ghostlifestyle.com
+            web@vicencolifestyle.com
           </span>
         </p>
         <br />
@@ -319,11 +319,11 @@ const Privacy = () => {
           <span>
             The Service and its original content (excluding Content provided by
             users), features and functionality are and will remain the exclusive
-            property of Ghost, LLC and its licensors. The Service is protected
+            property of VICENCO, LLC and its licensors. The Service is protected
             by copyright, trademark, and other laws of both the United States
             and foreign countries. Our trademarks and trade dress may not be
             used in connection with any product or service without the prior
-            written consent of Ghost, LLC.
+            written consent of VICENCO, LLC.
           </span>
         </p>
         <br />
@@ -333,12 +333,12 @@ const Privacy = () => {
         <p>
           <span>
             Our Service may contain links to third party web sites or services
-            that are not owned or controlled by Ghost, LLC.
+            that are not owned or controlled by VICENCO, LLC.
           </span>
         </p>
         <p>
           <span>
-            Ghost, LLC has no control over, and assumes no responsibility for
+            VICENCO, LLC has no control over, and assumes no responsibility for
             the content, privacy policies, or practices of any third party web
             sites or services. We do not warrant the offerings of any of these
             entities/individuals or their websites.
@@ -346,7 +346,7 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            You acknowledge and agree that Ghost, LLC shall not be responsible
+            You acknowledge and agree that VICENCO, LLC shall not be responsible
             or liable, directly or indirectly, for any damage or loss caused or
             alleged to be caused by or in connection with use of or reliance on
             any such content, goods or services available on or through any such
@@ -392,9 +392,9 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            You agree to defend, indemnify and hold harmless Ghost, LLC and its
-            licensee and licensors, and their employees, contractors, agents,
-            officers and directors, from and against any and all claims,
+            You agree to defend, indemnify and hold harmless VICENCO, LLC and
+            its licensee and licensors, and their employees, contractors,
+            agents, officers and directors, from and against any and all claims,
             damages, obligations, losses, liabilities, costs or debt, and
             expenses (including but not limited to attorney's fees), resulting
             from or arising out of a) your use and access of the Service, by you
@@ -408,7 +408,7 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            In no event shall Ghost, LLC, nor its directors, employees,
+            In no event shall VICENCO, LLC, nor its directors, employees,
             partners, agents, suppliers, or affiliates, be liable for any
             indirect, incidental, special, consequential or punitive damages,
             including without limitation, loss of profits, data, use, goodwill,
@@ -439,7 +439,7 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            Ghost, LLC its subsidiaries, affiliates, and its licensors do not
+            VICENCO, LLC its subsidiaries, affiliates, and its licensors do not
             warrant that a) the Service will function uninterrupted, secure or
             available at any particular time or location; b) any errors or
             defects will be corrected; c) the Service is free of viruses or
@@ -519,8 +519,8 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            Ghost, LLC ("us", "we", or "our") operates the ghostlifestyle.com
-            website (the "Service").
+            VICENCO, LLC ("us", "we", or "our") operates the
+            vicencolifestyle.com website (the "Service").
           </span>
         </p>
         <p>
@@ -542,7 +542,7 @@ const Privacy = () => {
             of information in accordance with this policy. Unless otherwise
             defined in this Privacy Policy, terms used in this Privacy Policy
             have the same meanings as in our Terms and Conditions, accessible at
-            ghostlifestyle.com
+            vicencolifestyle.com
           </span>
         </p>
         <br />
@@ -640,10 +640,10 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            Ghost, LLC uses remarketing services to advertise on third party web
-            sites to you after you visited our Service. We, and our third party
-            vendors, use cookies to inform, optimize and serve ads based on your
-            past visits to our Service.
+            VICENCO, LLC uses remarketing services to advertise on third party
+            web sites to you after you visited our Service. We, and our third
+            party vendors, use cookies to inform, optimize and serve ads based
+            on your past visits to our Service.
           </span>
         </p>
         <p>&nbsp;</p>
@@ -805,7 +805,7 @@ const Privacy = () => {
         </p>
         <p>
           <span>
-            If Ghost, LLC is involved in a merger, acquisition or asset sale,
+            If VICENCO, LLC is involved in a merger, acquisition or asset sale,
             your Personal Information may be transferred as a business asset. In
             such cases, we will provide notice before your Personal Information
             is transferred and/or becomes subject to a different Privacy Policy.

@@ -231,7 +231,7 @@ const Header = () => {
                 >
                   <div className="select__selected" data-value="test">
                     <div className="text">
-                      <img src="//cdn.shopify.com/s/files/1/2060/6331/t/110/assets/US_100x.png?v=12534241723589479250" />
+                      <img src="" />
 
                       <span>US</span>
                     </div>
@@ -241,19 +241,19 @@ const Header = () => {
 
                   <ul className="select__list">
                     <li data-value="https://vicenco.co.uk">
-                      <img src="//cdn.shopify.com/s/files/1/2060/6331/t/110/assets/US_100x.png?v=12534241723589479250" />
+                      <img src="" />
 
                       <span>US</span>
                     </li>
 
                     <li data-value="https://uk.vicenco.co.uk">
-                      <img src="//cdn.shopify.com/s/files/1/2060/6331/t/110/assets/EU_100x.png?v=4571116827094481479" />
+                      <img src="" />
 
                       <span>EU</span>
                     </li>
 
                     <li data-value="https://au.vicenco.co.uk">
-                      <img src="//cdn.shopify.com/s/files/1/2060/6331/t/110/assets/AU_100x.png?v=15067364082153954558" />
+                      <img src="" />
 
                       <span>AU</span>
                     </li>
