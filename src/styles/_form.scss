@@ -1,0 +1,39 @@
+.select__selected {
+  display: -webkit-box;
+  display: flex;
+  background-color: #2d89fa;
+  color: #ffffff;
+  padding: 12px 20px 12px 30px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: left;
+
+  .text {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+    .select-swatch--background {
+      height: 35px;
+      width: 35px;
+      background-size: cover;
+      margin-right: 8px;
+      margin-left: -12px;
+    }
+  }
+}
+
+.form__label {
+  display: block;
+  font-weight: 700;
+  color: #818181;
+  margin-bottom: 8px;
+}

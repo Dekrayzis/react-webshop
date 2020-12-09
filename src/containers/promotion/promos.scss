@@ -1,0 +1,76 @@
+.promo-section {
+  .family_slider {
+    .lockup {
+      -webkit-box-ordinal-group: 3;
+      order: 2;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-flex-align: center;
+      align-items: center;
+      background-repeat: no-repeat;
+
+      .famili_lockup {
+        padding: 0 202px;
+        color: #fff;
+        width: 100%;
+
+        .lockup_header {
+          padding-bottom: 15px;
+          border-bottom: 5px solid #ff3d57;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-align: baseline;
+          -webkit-flex-align: baseline;
+          align-items: baseline;
+          -moz-justify-content: space-between;
+          -ms-justify-content: space-between;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+
+          .logo {
+            line-height: 1;
+
+            img {
+              width: 70px;
+            }
+          }
+        }
+
+        .lockup_body {
+          border-bottom: 5px solid #fff;
+          padding: 30px 0 23px;
+          margin-bottom: 45px;
+
+          h1,
+          .h1 {
+            margin-bottom: 0;
+            line-height: 60px;
+          }
+        }
+
+        .lockup_footer {
+        }
+      }
+    }
+
+    .famili_img {
+      list-style: none;
+      margin: 0 -15px;
+
+      li {
+        margin-bottom: 0;
+        height: 800px;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          height: inherit;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+  }
+}

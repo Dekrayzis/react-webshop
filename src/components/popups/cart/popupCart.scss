@@ -1,0 +1,44 @@
+.shopping-cart {
+  position: absolute;
+  top: 74px;
+  right: -5px;
+  z-index: 99;
+  width: 350px;
+  background: #fff;
+  padding: 21px 18px 6px;
+  display: none;
+  box-shadow: 0 1px 23px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+
+  &.open {
+    display: block;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+  }
+
+  &:before {
+    width: 6px;
+    height: 6px;
+    background-color: #2d89fa;
+    position: absolute;
+    top: -14px;
+    right: 37px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  &:after {
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+  }
+}

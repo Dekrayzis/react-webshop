@@ -1,0 +1,10 @@
+.home__carousel {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -6.5rem;
+
+  .slide {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,105 @@
+.categories_item {
+  padding: 0 10px !important;
+
+  .categories_img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+
+        span {
+          opacity: 1;
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+          -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+        }
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .overlay {
+      opacity: 0;
+      overflow: visible;
+      background: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        display: inline-block;
+        margin: -35px 0px 0 -35px;
+        width: 68px;
+        height: 68px;
+        background-color: #ff3d57;
+        box-shadow: 0 7px 16px rgba(0, 0, 0, 0.29);
+        border-radius: 50%;
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        -webkit-transition: -webkit-transform 0.2s 0.1s ease-in,
+          opacity 0.1s ease-in-out;
+        -webkit-transition: opacity 0.1s ease-in-out,
+          -webkit-transform 0.2s 0.1s ease-in;
+        transition: opacity 0.1s ease-in-out,
+          -webkit-transform 0.2s 0.1s ease-in;
+        transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
+        transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out,
+          -webkit-transform 0.2s 0.1s ease-in;
+
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 16px;
+          height: 4px;
+          background-color: #282828;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+
+        &:after {
+          width: 4px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .categories_info {
+    text-align: center;
+    margin: 38px 0;
+
+    a {
+      &.h4 {
+        margin-bottom: 5px;
+        line-height: 20px;
+        display: inline-block;
+        color: #282828;
+      }
+    }
+
+    h5 {
+      font-size: 1.1rem;
+      color: #818181;
+      line-height: 1.9rem;
+      margin-bottom: 0;
+    }
+  }
+}

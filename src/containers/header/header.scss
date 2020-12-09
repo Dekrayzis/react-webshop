@@ -1,0 +1,231 @@
+.header {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.14);
+  z-index: 2;
+  position: relative;
+
+  .top_header {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #f2f3f5;
+    padding: 8px 0;
+    font-weight: 700;
+  }
+}
+
+.call_connect {
+  //   background: url(../assets/call_icon.png) no-repeat 0px 5px;
+  padding-left: 25px;
+  display: flex;
+
+  svg {
+    transform: rotate(137deg);
+    position: relative;
+    top: 5px;
+  }
+
+  a {
+    color: #747781;
+    display: block;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #282828;
+    }
+  }
+}
+
+.announcements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-mobile {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #f2f3f5;
+    padding: 8px 0;
+    font-weight: 700;
+    line-height: 18px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+
+.mdl_header {
+  position: relative;
+  border-top: 1px solid #f0f0f0;
+
+  .logo {
+    padding: 0;
+
+    a {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-color: #282828;
+      max-width: 400px;
+      height: 78px;
+      padding: 0 10px;
+
+      img {
+        max-width: 82px;
+      }
+    }
+  }
+
+  .sub_nav {
+    font-weight: 700;
+    float: right;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-right: 1rem;
+
+    .search {
+      float: left;
+      margin-right: 26px;
+
+      .open-search-popup {
+        font-size: 1.5rem;
+
+        svg {
+          fill: #000000;
+        }
+      }
+    }
+
+    .urlRedirects {
+      display: none;
+    }
+
+    .account {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      > a {
+        font-size: 1rem;
+        color: #282828;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .option_list {
+        list-style: none;
+        background: #f2f2f2;
+        font-family: "Roboto", sans-serif;
+        padding: 38px 0px 0;
+        width: 260px;
+        position: absolute;
+        top: 74px;
+        z-index: 99;
+        cursor: default;
+        display: none;
+        border-radius: 6px;
+        box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.2);
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+        li {
+          margin-bottom: 0px;
+          padding: 0px 15px;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+
+          a {
+            line-height: 26px;
+            font-size: 16px;
+            font-weight: 700;
+            position: relative;
+            display: block;
+            padding: 17px 0 17px 54px;
+            color: #000;
+
+            svg {
+              position: absolute;
+              width: 15px;
+              text-align: center;
+              line-height: 24px;
+              left: 8px;
+              opacity: 0;
+              -webkit-transition: opacity 0.2s ease-in-out;
+              transition: opacity 0.2s ease-in-out;
+            }
+          }
+
+          &.points {
+            margin: 18px 0px 0;
+            padding: 28px 0 18px;
+            border-top: 1px solid #eeeeee;
+            line-height: 30px;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 0 0 6px 6px;
+
+            span {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .cart {
+      padding: 0;
+      margin-left: 27px;
+      position: relative;
+      cursor: pointer;
+
+      .cart_icon {
+        font-size: 1.72rem;
+        position: relative;
+        top: 1px;
+        color: #282828;
+
+        svg {
+          position: relative;
+          right: 8px;
+          top: 5px;
+        }
+
+        &:before {
+          position: relative;
+          z-index: 2;
+        }
+
+        span {
+          width: 30px;
+          height: 30px;
+          font-size: 13px;
+          line-height: 22px;
+          text-align: center;
+          color: #fff;
+          margin-left: -5px;
+          top: -8px;
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          font-weight: 700;
+          font-family: "Roboto", sans-serif;
+          background-color: #2d89fa;
+          border-radius: 50%;
+          border: 5px solid #c6dcf7;
+          box-shadow: 0px 0px 0px 5px #eff5fd;
+        }
+      }
+    }
+  }
+}

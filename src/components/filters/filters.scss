@@ -1,0 +1,169 @@
+.filter_header {
+  padding-top: 4rem;
+
+  .container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .filter-mob {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .product_drp,
+      .point_toggle {
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.03);
+        float: left;
+        padding: 18px 32px;
+        width: 265px;
+      }
+    }
+  }
+}
+
+//-- Product type filter
+.product_drp {
+  position: relative;
+  padding: 30px 32px;
+  margin-right: 3rem;
+
+  &.open {
+    z-index: 1;
+
+    .cs-options {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+
+      &:after {
+        opacity: 1;
+      }
+
+      .sidebar-tag {
+        li {
+          margin-bottom: 0;
+          opacity: 1;
+          -webkit-transition: none;
+          transition: none;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+  }
+
+  .cs-placeholder {
+    svg {
+      margin-left: 3rem;
+    }
+  }
+
+  > span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #818181;
+    padding: 0.3rem 0;
+  }
+
+  .cs-options {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    min-width: 320px;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    padding-bottom: 1.25em;
+    pointer-events: none;
+    border-radius: 6px;
+    padding: 50px 25px 35px;
+    box-shadow: 0 23px 13px rgba(0, 0, 0, 0.15);
+
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 20px;
+      background-color: transparent;
+      border-bottom: 20px solid #fff;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+    }
+
+    .sidebar-tag {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: auto;
+      max-height: 330px;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -25px, 0);
+        transform: translate3d(0, -25px, 0);
+        -webkit-transition: opacity 0.15s, -webkit-transform 0.15s;
+        transition: opacity 0.15s, transform 0.15s, -webkit-transform 0.15s;
+
+        .cb_switch_label {
+          span {
+            display: block;
+            cursor: pointer;
+            white-space: nowrap;
+            text-indent: 82px;
+            line-height: 27px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #6b6b6b;
+          }
+        }
+      }
+    }
+  }
+}
+
+//-- Payment filter
+.point_toggle {
+  .switchLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .cashS,
+    .pointS {
+      color: #818181;
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 34px;
+      text-transform: capitalize;
+    }
+
+    .cashS {
+      margin-right: 1rem;
+    }
+    .pointS {
+      margin-left: 1rem;
+    }
+  }
+}

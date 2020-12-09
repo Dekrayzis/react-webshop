@@ -1,0 +1,60 @@
+.cc-revoke,
+.cc-banner {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 41, 49);
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica, Calibri, Arial, sans-serif;
+  font-size: 0.85rem;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  height: 42px;
+  line-height: 1.5em;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+
+  .cc-message {
+    line-height: normal;
+    -ms-flex: 0.98 1;
+    flex: 0.98 1;
+
+    .cc-link {
+      cursor: pointer;
+      display: inline-block;
+      opacity: 0.8;
+      padding: 0.2em;
+    }
+  }
+
+  .cc-compliance {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      &:first-child {
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .cc-btn {
+      background-color: rgb(33, 41, 49);
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+      border: 1px solid rgb(255, 255, 255);
+      padding: 0.25rem 1rem;
+      cursor: pointer;
+    }
+  }
+}

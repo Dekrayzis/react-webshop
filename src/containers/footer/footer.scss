@@ -1,0 +1,124 @@
+footer {
+  display: block;
+  background-size: cover;
+  padding: 50px 0;
+
+  .two-thirds {
+    width: 54.666%;
+  }
+
+  .auto {
+    float: none !important;
+    margin: 0 auto !important;
+  }
+
+  .top_footer {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ffffff;
+
+    .footer_logo {
+      display: block;
+      max-width: 120px;
+      margin: 2rem auto 0;
+
+      img {
+        display: block;
+      }
+    }
+
+    .social-links {
+      margin-top: 30px;
+
+      ul {
+        list-style: none;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          margin: 0 6px;
+
+          a {
+            font-size: 20px;
+            color: #ffffff;
+            margin-right: 0.6rem;
+            transition: 0.5s;
+
+            &:hover {
+              color: #ff3d57;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_nav {
+      display: inline-block;
+      text-align: left;
+
+      h5 {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 19px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 0;
+
+          a {
+            font-weight: 500;
+            line-height: 37px;
+            font-size: 1.2rem;
+            color: #ffffff;
+            transition: 0.5s;
+
+            &:hover {
+              color: #ff3d57;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom_footer {
+    padding-top: 40px;
+    text-align: center;
+
+    a,
+    p {
+      font-weight: 500;
+      line-height: 30px;
+      font-size: 1.2rem;
+      color: #ffffff;
+      transition: 0.5s;
+    }
+
+    a {
+      margin-right: 1rem;
+
+      &:hover {
+        color: #ff3d57;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      max-width: 600px;
+      margin: 15px auto 0;
+      line-height: normal;
+
+      &:first-of-type {
+        margin: 6px auto 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.store__items_list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  margin: 4rem auto;
+  width: 1740px;
+}
+
+.pageTitle {
+  margin-left: auto;
+  position: relative;
+
+  h1 {
+    position: relative;
+  }
+}

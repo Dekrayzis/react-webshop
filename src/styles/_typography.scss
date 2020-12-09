@@ -1,0 +1,123 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  display: block;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 3.3rem;
+  font-weight: 900;
+}
+
+h4,
+.h4 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+input,
+textarea,
+button,
+select {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+input,
+textarea,
+select {
+  border: 2px solid #e1e8ee;
+  width: 100%;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background: #f5f6f7 !important;
+  border-radius: 3px;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin: 0 8px 0 0;
+  padding: 0;
+}
+
+a {
+  color: #282828;
+  transition: color 0.35s;
+
+  &:hover {
+    color: #2d89fa;
+  }
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+.section_title {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 23px 0 16px;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #ff3d57;
+}

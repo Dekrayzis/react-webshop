@@ -1,0 +1,192 @@
+.main-nav {
+  text-align: center;
+  letter-spacing: 1px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      float: left;
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0;
+
+      &:hover {
+        > ul {
+          opacity: 1;
+          visibility: visible;
+          overflow: visible;
+
+          li {
+            height: 122px;
+            overflow: visible;
+            padding: 0;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        z-index: 99;
+        height: auto;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 0 0 6px 6px;
+        -webkit-transition: opacity 0.25s ease 0.1s;
+        transition: opacity 0.25s ease 0.1s;
+
+        li {
+          height: 0;
+          overflow: hidden;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          -webkit-transition: height 0.25s ease 0.1s, background 0.25s ease;
+          transition: height 0.25s ease 0.1s, background 0.25s ease;
+
+          a {
+            line-height: 114px;
+            font-size: 14px;
+            padding: 4px;
+            margin: 0;
+            border: none;
+            text-transform: capitalize;
+            color: #a3a3a3;
+          }
+
+          &:hover {
+            > ul {
+              position: absolute;
+              top: 0px;
+              left: 100%;
+              opacity: 1;
+              -webkit-transition: opacity 0.25s ease 0.1s;
+              transition: opacity 0.25s ease 0.1s;
+
+              li {
+                height: 122px;
+                overflow: visible;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+
+      &.sub {
+        a {
+          i {
+            position: relative;
+            margin-left: 22px;
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+
+      a {
+        display: block;
+        padding: 25px 52px;
+        font-size: 13px;
+        line-height: 28px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #282828;
+        -webkit-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+
+        &:hover,
+        .active {
+          color: #2d89fa;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          padding: 21px 15px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          padding: 25px 28px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1600px) {
+          padding: 25px 35px;
+        }
+      }
+    }
+  }
+}
+
+.main-nav ul li ul li:hover > ul > ul {
+  opacity: 1;
+}
+.main-nav ul li ul li:hover > ul > ul > li {
+  height: 122px;
+  overflow: visible;
+  padding: 0;
+}
+.main-nav ul li ul li:hover {
+  background-color: #2d89fa;
+}
+.main-nav ul li ul li a {
+  line-height: 114px;
+  font-size: 14px;
+  padding: 4px;
+  margin: 0;
+  border: none;
+  text-transform: capitalize;
+  color: #a3a3a3;
+}
+.main-nav ul li ul li a:hover {
+  color: #fff;
+}
+.main-nav ul li ul li:last-child > a {
+  border: none;
+}
+.main-nav ul li ul li ul {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease 0.1s;
+  transition: opacity 0.25s ease 0.1s;
+}
+.main-nav ul li ul li ul li {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  -webkit-transition: height 0.25s ease 0.1s;
+  transition: height 0.25s ease 0.1s;
+}
+.main-nav ul li ul li ul li a {
+  width: 150px;
+  padding: 4px;
+  margin: 0;
+  border: none;
+}
+.main-nav ul li ul li ul li:last-child > a {
+  border: none;
+}
+.wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

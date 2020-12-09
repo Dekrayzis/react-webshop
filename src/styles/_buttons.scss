@@ -1,0 +1,32 @@
+.btn,
+.btn--secondary,
+.rte .btn--secondary,
+.rte .btn,
+.rte .btn--secondary {
+  width: auto;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  background-color: #2d89fa;
+  color: #fff !important;
+}
+
+.btn--secondary,
+.rte .btn--secondary {
+  background-color: #ff3d57;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #ff0a2b;
+    color: #fff;
+  }
+}
