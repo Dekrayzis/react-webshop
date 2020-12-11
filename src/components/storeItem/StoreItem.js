@@ -29,9 +29,9 @@ const StoreItem = ({
 }) => {
   const renderTypes = (arr) => {
     return arr.map((item) => (
-      <React.Fragment>
+      <React.Fragment key={item.name}>
         <span
-          class="proS product_flv withBgColor"
+          className="proS product_flv withBgColor"
           data-swatchvalue={item.name}
           style={{ backgroundColor: item.color }}
         />
@@ -41,33 +41,33 @@ const StoreItem = ({
 
   return (
     <>
-      <div class="prodgridlist">
-        <div class="product_item">
+      <div className="prodgridlist">
+        <div className="product_item">
           <button className="product_item_favourite">
             {isFavourite ? <FaStar /> : <FaRegStar />}
           </button>
-          <div class="product_item_header">
-            {colors && <div class="color">{renderTypes(colors)}</div>}
+          <div className="product_item_header">
+            {colors && <div className="color">{renderTypes(colors)}</div>}
             {colors.length === 1 ? (
-              <span class="flvText">
+              <span className="flvText">
                 <h6>{colors[0].name}</h6>
               </span>
             ) : (
-              <span class="flvText">
+              <span className="flvText">
                 <h6>Multiple Colors Available</h6>
               </span>
             )}
           </div>
 
-          <div class="product_images slick-initialized slick-slider">
-            <div class="slick-list draggable">
-              <div class="slick-track">
+          <div className="product_images slick-initialized slick-slider">
+            <div className="slick-list draggable">
+              <div className="slick-track">
                 <div
-                  class="slick-slide slick-current slick-active"
+                  className="slick-slide slick-current slick-active"
                   data-slick-index="0"
                   aria-hidden="false"
                 />
-                <div class="slide-wrapper">
+                <div className="slide-wrapper">
                   <a href="/">
                     <img
                       src="/assets/products/GamerPeach_400x.webp"
@@ -78,37 +78,41 @@ const StoreItem = ({
               </div>
             </div>
           </div>
-          <div class="tag-overlays tag-overlays--end">
+          <div className="tag-overlays tag-overlays--end">
             {!inStock && (
-              <div class="sold-out-overlay">
+              <div className="sold-out-overlay">
                 <p>Sold Out</p>
               </div>
             )}
           </div>
-          <div class="product_info">
-            <div class="price_title">
-              <div class="title">
-                <a href="/products/VICENCO%C2%AE-gamer" class="h5">
+          <div className="product_info">
+            <div className="price_title">
+              <div className="title">
+                <a href="/products/VICENCO%C2%AE-gamer" className="h5">
                   VICENCO® gamer
                 </a>
-                <span class="tag">GAMER</span>
+                <span className="tag">GAMER</span>
               </div>
               {usePoints ? (
-                <span class="points">9000 PTS</span>
+                <span className="points">9000 PTS</span>
               ) : (
                 <div className="priceBox">
                   {isDiscounted && <s className="discountPrice">$163.99</s>}
-                  <span class="price">$64.99</span>
+                  <span className="price">$64.99</span>
                 </div>
               )}
             </div>
-            <div class="product_overlay">
-              <div class="product_btn">
-                <button type="button" class="btn cart_btn" disabled={!inStock}>
+            <div className="product_overlay">
+              <div className="product_btn">
+                <button
+                  type="button"
+                  className="btn cart_btn"
+                  disabled={!inStock}
+                >
                   <FaShoppingCart />
                   {inStock ? "Add To Cart" : "Sold Out"}
                 </button>
-                <a href="/products/VICENCO%C2%AE-gamer" class="btn details">
+                <a href="/products/VICENCO%C2%AE-gamer" className="btn details">
                   <FaSignal />
                   Details
                 </a>

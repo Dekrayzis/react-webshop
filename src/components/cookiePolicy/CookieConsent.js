@@ -1,24 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+//-- Stylesheet
 import "./cookieConsent.scss";
 
 const CookieConsent = () => {
+  const RemoveFromScreen = () => {
+    document.querySelector(".cc-banner").classList.add("remove");
+  };
+
   return (
-    <div class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--732197953 ">
-      <span id="cookieconsent:desc" class="cc-message">
+    <div className="cc-banner">
+      <span className="cc-message">
         VICENCO® asks you to accept cookies for performance, social media and
         advertising purposes. To get more information about these cookies and
         the processing of your personal data, check our Privacy Policy. Do you
         accept these cookies?
-        <a
-          class="cc-link"
-          href="https://uk.vicencolifestyle.com/pages/terms-and-service"
-          target="_blank"
-        >
+        <Link className="cc-link" to="/terms-and-service">
           Privacy Policy
-        </a>
+        </Link>
       </span>
-      <div class="cc-compliance">
-        <span class="cc-btn cc-dismiss dismissCookie">Yes, I Accept</span>
+      <div className="cc-compliance" onClick={RemoveFromScreen}>
+        <span className="cc-btn cc-dismiss dismissCookie">Yes, I Accept</span>
       </div>
     </div>
   );

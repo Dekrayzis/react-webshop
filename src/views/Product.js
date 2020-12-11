@@ -13,13 +13,13 @@ const Product = () => {
           className="cross_area supplimentCross"
           style={{ backgroundColor: `${color}` }}
         >
-          <img src="/assets/cross-logoimg.svg" />
+          <img src="/assets/cross-logoimg.svg" alt="Logo" />
         </div>
         <div className="container">
-          <div class="four-fifths xl-down--nine-tenths auto md--four-fifths sm--one-whole sm-down--one-whole">
-            <div class="flex-grid">
-              <div class="flex-grid__col--xs-12 flex-grid__col--sm-6 flex-grid__col--xl-7">
-                <div class="main_slider desktop-slider">
+          <div className="four-fifths xl-down--nine-tenths auto md--four-fifths sm--one-whole sm-down--one-whole">
+            <div className="flex-grid">
+              <div className="flex-grid__col--xs-12 flex-grid__col--sm-6 flex-grid__col--xl-7">
+                <div className="main_slider desktop-slider">
                   <ul>
                     <li>
                       <img
@@ -31,13 +31,13 @@ const Product = () => {
                     </li>
                   </ul>
 
-                  <div class="bx-pager">
+                  <div className="bx-pager">
                     <a
                       data-alttext="VICENCO LEGEND® x SONIC® pre workout"
                       data-slide-index="0"
-                      href="javascript:void(0);"
+                      href={(e) => e.preventDefault()}
                       data-options="30 Servings,SONIC® Cherry Limeade,"
-                      class="active"
+                      className="active"
                     >
                       <img
                         data-mainimg="/assets/products/Legend_SONIC.png"
@@ -49,19 +49,23 @@ const Product = () => {
                 </div>
               </div>
 
-              <div class="flex-grid__col--xs-12 flex-grid__col--sm-6 flex-grid__col--xl-5">
-                <div class="product_info product-detail-info">
+              <div className="flex-grid__col--xs-12 flex-grid__col--sm-6 flex-grid__col--xl-5">
+                <div className="product_info product-detail-info">
                   <div>
-                    <div class="product_tag">PRE-WORKOUT</div>
+                    <div className="product_tag">PRE-WORKOUT</div>
                     <h1 id="mainProdTitle">
                       <span>
-                        <img src="/assets/dark-logo.svg" class="titleLogo" />
+                        <img
+                          src="/assets/dark-logo.svg"
+                          className="titleLogo"
+                          alt="Logo"
+                        />
                       </span>
                       LEGEND
-                      <sup class="hide">®</sup> x SONIC<sup>®</sup>
+                      <sup className="hide">®</sup> x SONIC<sup>®</sup>
                     </h1>
 
-                    <div class="short_desc">
+                    <div className="short_desc">
                       <p>
                         After a year of trial and error with the SONIC® team
                         (and A TON of “R&amp;D” trips to America’s Favorite
@@ -70,17 +74,17 @@ const Product = () => {
                       </p>
                     </div>
 
-                    <div class="product-badges"></div>
+                    <div className="product-badges"></div>
 
-                    <div class="nutriDiv">
-                      <span class="nut_facts">
+                    <div className="nutriDiv">
+                      <span className="nut_facts">
                         <FaPoll /> View Supplement Facts
                       </span>
                     </div>
 
                     <div id="nut_facts">
-                      <span class="close"></span>
-                      <div class="nuts_img" id="nutrition_img_show">
+                      <span className="close"></span>
+                      <div className="nuts_img" id="nutrition_img_show">
                         <img
                           src="/assets/products/SFPLegendSONIC.png"
                           alt="VICENCO LEGEND X SONIC pre workout Supplement Facts"
@@ -96,17 +100,17 @@ const Product = () => {
       </div>
       <Purchasebar />
       {/* Details */}
-      <div class="container">
-        <div class="four-fifths lg-down--one-whole auto">
+      <div className="container">
+        <div className="four-fifths lg-down--one-whole auto">
           <div id="product_desc">
-            <div class="flex-grid flex-grid--space">
-              <div class="flex-grid__col--lg-5 flex-grid__col--sm-5 flex-grid__col--xs-12">
-                <div class="description">
-                  <div class="section_title">Product Description</div>
-                  <h2 class="hiddenProdTitle">
+            <div className="flex-grid flex-grid--space">
+              <div className="flex-grid__col--lg-5 flex-grid__col--sm-5 flex-grid__col--xs-12">
+                <div className="description">
+                  <div className="section_title">Product Description</div>
+                  <h2 className="hiddenProdTitle">
                     Because There's Nothing Better, Than The Real Thing...
                   </h2>
-                  <div class="mainDesc">
+                  <div className="mainDesc">
                     <p>
                       Since the dawn of pre-workout, this industry has released
                       cherry limeade flavors saying they “taste like SONIC®
@@ -135,8 +139,8 @@ const Product = () => {
                 </div>
               </div>
 
-              <div class="flex-grid__col--lg-5 flex-grid__col--sm-6 flex-grid__col--xs-12">
-                <div class="desc_img">
+              <div className="flex-grid__col--lg-5 flex-grid__col--sm-6 flex-grid__col--xs-12">
+                <div className="desc_img">
                   <img
                     src="/assets/products/SONIC_Action.png"
                     alt="VICENCO LEGEND<sup>®</sup> x SONIC<sup>®</sup> pre workout"

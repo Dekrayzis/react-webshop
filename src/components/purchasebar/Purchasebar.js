@@ -14,7 +14,7 @@ const RadioField = ({
   selector,
 }) => {
   return (
-    <div class={selector}>
+    <div className={selector}>
       <input
         type="radio"
         name={`${id}`}
@@ -23,9 +23,9 @@ const RadioField = ({
         value={currency ? currency : label}
         disabled={disabled}
       />
-      <label for={`${id}${index}`}>
+      <label htmlFor={`${id}${index}`}>
         {currency ? (
-          <span class="money" data-currency-usd={currency}>
+          <span className="money" data-currency-usd={currency}>
             {currency}
           </span>
         ) : (
@@ -36,34 +36,34 @@ const RadioField = ({
   );
 };
 
-const SelectField = ({
-  id,
-  index,
-  checked,
-  currency,
-  disabled,
-  label,
-  selector,
-}) => {
-  return (
-    <div class="selector-wrapper">
-      <label for="productSelect-option-0">Size</label>
-      <select
-        class="single-option-selector"
-        data-option="option1"
-        id="productSelect-option-0"
-      >
-        <option value="30 Servings">30 Servings</option>
-      </select>
-    </div>
-  );
-};
+// const SelectField = ({
+//   id,
+//   index,
+//   checked,
+//   currency,
+//   disabled,
+//   label,
+//   selector,
+// }) => {
+//   return (
+//     <div className="selector-wrapper">
+//       <label htmlFor="productSelect-option-0">Size</label>
+//       <select
+//         className="single-option-selector"
+//         data-option="option1"
+//         id="productSelect-option-0"
+//       >
+//         <option value="30 Servings">30 Servings</option>
+//       </select>
+//     </div>
+//   );
+// };
 
 const Purchasebar = ({ inStock = true }) => {
   return (
     <div
       id="purchasebar"
-      itemprop="offers"
+      itemProp="offers"
       itemscope=""
       itemtype="http://schema.org/Offer"
     >
@@ -73,9 +73,9 @@ const Purchasebar = ({ inStock = true }) => {
         enctype="multipart/form-data"
         id="AddToCartForm"
       >
-        <div class="form-wrapper-mobile form-wrapper-mobile--flex">
-          <div class="selector-wrappers payment-type" id="paymentType">
-            <label class="form__label">Payment Type</label>
+        <div className="form-wrapper-mobile form-wrapper-mobile--flex">
+          <div className="selector-wrappers payment-type" id="paymentType">
+            <label className="form__label">Payment Type</label>
 
             <RadioField
               id="price"
@@ -96,10 +96,10 @@ const Purchasebar = ({ inStock = true }) => {
             />
           </div>
 
-          <div class="swatch clearfix" data-option-index="0">
-            <label class="form__label">Size</label>
+          <div className="swatch clearfix" data-option-index="0">
+            <label className="form__label">Size</label>
 
-            <div class="swatch-elements">
+            <div className="swatch-elements">
               <RadioField
                 id="servings"
                 index="3"
@@ -112,16 +112,19 @@ const Purchasebar = ({ inStock = true }) => {
           </div>
 
           <div
-            class="select swatch"
+            className="select swatch"
             data-name="Flavor"
             data-select="productSelect-option-1"
           >
-            <label class="form__label">Flavor</label>
+            <label className="form__label">Flavor</label>
 
-            <div class="select__selected" data-value="SONIC® Cherry Limeade">
-              <div class="text">
+            <div
+              className="select__selected"
+              data-value="SONIC® Cherry Limeade"
+            >
+              <div className="text">
                 <div
-                  class="select-swatch select-swatch--background "
+                  className="select-swatch select-swatch--background "
                   style={{
                     backgroundImage: `url(/assets/products/Sonic_actionLogo.webp)`,
                   }}
@@ -134,17 +137,17 @@ const Purchasebar = ({ inStock = true }) => {
           {/* <select
             name="id"
             id="productSelect"
-            class="product-single__variants"
+            className="product-single__variants"
           ></select> */}
 
-          {/* <div class="mobileDisplay">
-            <div class="swatch clearfix" data-option-index="1">
-              <div class="header">Flavor</div>
+          {/* <div className="mobileDisplay">
+            <div className="swatch clearfix" data-option-index="1">
+              <div className="header">Flavor</div>
 
-              <div class="swatch-elements">
+              <div className="swatch-elements">
                 <div
                   data-value="SONIC® Cherry Limeade"
-                  class="swatch-element sonic-cherry-limeade soldout"
+                  className="swatch-element sonic-cherry-limeade soldout"
                 >
                   <input
                     data-variant="16411843199050"
@@ -155,7 +158,7 @@ const Purchasebar = ({ inStock = true }) => {
                     checked=""
                   />
 
-                  <label for="swatch-1-sonic-cherry-limeade-1680956162122">
+                  <label htmlFor="swatch-1-sonic-cherry-limeade-1680956162122">
                     SONIC® Cherry Limeade
                   </label>
                 </div>
@@ -163,58 +166,58 @@ const Purchasebar = ({ inStock = true }) => {
             </div>
           </div> */}
 
-          <div class="Quantity-wrapper">
-            <label class="form__label">Quantity</label>
-            <div class="product_qty">
-              <button type="button" class="minus" />
+          <div className="Quantity-wrapper">
+            <label className="form__label">Quantity</label>
+            <div className="product_qty">
+              <button type="button" className="minus" />
               <input
                 type="text"
                 value="1"
                 readonly="readonly"
                 name="quantity"
-                class="product-quantity"
+                className="product-quantity"
                 id="quantity"
               />
-              <button type="button" class="plus" />
+              <button type="button" className="plus" />
             </div>
           </div>
 
-          <div class="add-to-cart-wrapper">
+          <div className="add-to-cart-wrapper">
             <button
               type="submit"
-              class="btn btn--add-to-cart btn--secondary btn--inline-loader disabled"
+              className="btn btn--add-to-cart btn--secondary btn--inline-loader disabled"
               disabled={!inStock}
             >
-              <div class="text">
+              <div className="text">
                 {inStock ? <span>Add To Cart</span> : <span>Out Of Stock</span>}
                 <FaShoppingCart />
-                <div class="button-loader"></div>
+                <div className="button-loader"></div>
               </div>
             </button>
           </div>
 
-          {/* <div class="point-redemption-wrapper">
+          {/* <div className="point-redemption-wrapper">
             <button
               type="button"
-              class="btn btn--point-redemption btn--secondary btn--inline-loader disabled"
+              className="btn btn--point-redemption btn--secondary btn--inline-loader disabled"
               disabled=""
             >
-              <div class="text">
+              <div className="text">
                 <span>Out Of Stock</span>
-                <i class="fas fa-shopping-cart"></i>
-                <div class="button-loader"></div>
+                <i className="fas fa-shopping-cart"></i>
+                <div className="button-loader"></div>
               </div>
             </button>
           </div> */}
 
-          {/* <div class="customerLoginStatus">false</div>
-          <div class="coming-soon">false</div>
+          {/* <div className="customerLoginStatus">false</div>
+          <div className="coming-soon">false</div>
           <input type="hidden" name="product-type" value="PRE-WORKOUT" /> */}
         </div>
       </form>
 
-      <div class="errorMessage"></div>
-      {/* <div class="cart_popup btn">
+      <div className="errorMessage"></div>
+      {/* <div className="cart_popup btn">
         Add To Cart<span></span>
       </div> */}
     </div>

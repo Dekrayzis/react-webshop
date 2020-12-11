@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaPhone,
   FaChevronDown,
@@ -7,10 +8,12 @@ import {
   FaSearch,
 } from "react-icons/fa";
 
+import PopupCart from "../../components/popups/cart/Popup_Cart";
 import { getPhoneNumber } from "../../helpers";
+
+//-- Stylesheets
 import "./header.scss";
 import "./nav.scss";
-import Popup_Cart from "../../components/popups/cart/Popup_Cart";
 
 const menu = [
   {
@@ -49,8 +52,8 @@ const menu = [
       {
         class: "bundles",
         label: "Bundles",
-        category: "collections",
-        subCategory: "bundles",
+        category: "bundles",
+        subCategory: "",
         mainLink: false,
         subMenu: [],
       },
@@ -58,7 +61,7 @@ const menu = [
         class: "apparel",
         label: "Apparel",
         category: "apparel",
-        subCategory: "apparel",
+        subCategory: "",
         mainLink: false,
         subMenu: [
           {
@@ -90,8 +93,8 @@ const menu = [
       {
         class: "gear",
         label: "Gear",
-        category: "collections",
-        subCategory: "gear",
+        category: "gear",
+        subCategory: "",
         mainLink: false,
         subMenu: [],
       },
@@ -156,11 +159,15 @@ const Header = () => {
   const renderMenuList = (array) => {
     const itemList = array.map((item, idx) => (
       <li key={idx} className="sub">
-        <a
-          href={item.hasSubMenu ? null : `${item.category}/${item.subCategory}`}
+        <Link
+          to={
+            item.hasSubMenu
+              ? "#"
+              : `/store/${item.category}/${item.subCategory}`
+          }
         >
           {item.label} {item.mainLink ? <FaChevronDown /> : null}
-        </a>
+        </Link>
         {item.subMenu.length > 0 && <ul>{renderMenuList(item.subMenu)}</ul>}
       </li>
     ));
@@ -176,7 +183,7 @@ const Header = () => {
             <div className="flex-grid__col--xs-3">
               <div className="call_connect">
                 <FaPhone />
-                <a href={`tel:${getPhoneNumber()}`}>{getPhoneNumber()}</a>
+                <a href={`tel:${getPhoneNumber()} `}>{getPhoneNumber()}</a>
               </div>
             </div>
 
@@ -198,15 +205,20 @@ const Header = () => {
       <div className="mdl_header">
         <div className="flex-grid flex-grid--no-margin flex-grid--centered">
           <div className="flex-grid__col--xs-3 logo">
-            <a href="/">
+            <Link to="/">
               <img
                 data-src="/assets/logo.svg"
                 className="sm-down--hide lozad"
                 src="/assets/logo.svg"
                 data-loaded="true"
+                alt="logo"
               />
-              <img src="/assets/dark-logo.svg" className="sm-down--show hide" />
-            </a>
+              <img
+                src="/assets/dark-logo.svg"
+                className="sm-down--show hide"
+                alt="logo"
+              />
+            </Link>
           </div>
 
           <div className="flex-grid__col--xs-0 flex-grid__col--lg-6">
@@ -218,9 +230,12 @@ const Header = () => {
           <div className="flex-grid__col--xs-9 flex-grid__col--lg-3">
             <div className="sub_nav">
               <div className="search">
-                <a href="#" className="open-search-popup">
+                <span
+                  onClick={(e) => e.preventDefault()}
+                  className="open-search-popup"
+                >
                   <FaSearch />
-                </a>
+                </span>
               </div>
 
               {/* <div className="urlRedirects region-select">
@@ -268,15 +283,15 @@ const Header = () => {
               </div> */}
 
               <div className="account myacc" id="myAcc">
-                <a href="/account/login" className="accountLink">
+                <Link to="/account/login" className="accountLink">
                   Account
-                </a>
+                </Link>
 
                 <ul className="option_list headerPopup">
                   <li>
-                    <a href="/account">
+                    <Link to="/account">
                       <FaUser /> My Account
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="points">
@@ -297,7 +312,7 @@ const Header = () => {
                   </span>
                 </span>
 
-                {showCart && <Popup_Cart isOpen={showCart} />}
+                {showCart && <PopupCart isOpen={showCart} />}
               </div>
 
               <div className="mobile-nav-link">

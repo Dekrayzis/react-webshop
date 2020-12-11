@@ -9,7 +9,7 @@ const Switch = ({ callBack }) => {
 
   useEffect(() => {
     callBack(isToggleOn);
-  }, [isToggleOn]);
+  }, [isToggleOn, callBack]);
 
   return (
     <div

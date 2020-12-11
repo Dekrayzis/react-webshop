@@ -11,6 +11,7 @@ import "../styles/store.scss";
 const Store_Template = (props) => {
   const [togglePrice, setTogglePrice] = useState(true);
   const [toggleFilterList, setFilterList] = useState(false);
+  const pageTitle = props.match.params.id;
 
   const handlePriceFilter = (val) => {
     setTogglePrice(val);
@@ -31,7 +32,7 @@ const Store_Template = (props) => {
             />
             <PaymentMethod priceToggle={handlePriceFilter} />
             <div className="pageTitle">
-              <h1>Supplements</h1>
+              <h1>{pageTitle}</h1>
             </div>
           </div>
         </div>

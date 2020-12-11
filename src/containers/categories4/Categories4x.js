@@ -1,38 +1,40 @@
 import React from "react";
+import CardType01 from "../../components/cards/CardType_01";
+
+//-- Stylesheet
 import "./categories.scss";
-import CardType_01 from "../../components/cards/CardType_01";
 
 const featuredProducts = [
   {
     label: "RESTOCKED NOW",
-    url: "",
+    url: "/product/legend-joggers",
     image: "Carousel_BASICSJoggers_large.webp",
     btnLabel: "LEGEND® x BUBBLICIOUS®",
   },
   {
     label: "SHOP NOW",
-    url: "",
+    url: "/product/legend-bubblicious",
     image: "Legend_Bubblicious_Carousel_large.webp",
-    btnLabel: "vicenco® 'BASICS' APPAREL",
+    btnLabel: "VICENCO 'BASICS' APPAREL",
   },
   {
     label: "SHOP NOW",
-    url: "",
+    url: "/product/backpack",
     image: "Backpack_Carousel_large.webp",
-    btnLabel: "vicenco® NYLON BACKPACK",
+    btnLabel: "VICENCO NYLON BACKPACK",
   },
   {
     label: "SHOP NOW",
-    url: "",
+    url: "/product/legend-bcca",
     image: "BCAAV2Carousel_large.webp",
-    btnLabel: "vicenco® BCAA",
+    btnLabel: "VICENCO BCAA",
   },
 ];
 
-const Categories_x4 = () => {
+const Categories4x = () => {
   const renderProducts = () => {
-    return featuredProducts.map((item) => (
-      <CardType_01 key={item.id} item={item} />
+    return featuredProducts.map((item, idx) => (
+      <CardType01 key={idx} item={item} />
     ));
   };
 
@@ -45,4 +47,4 @@ const Categories_x4 = () => {
   );
 };
 
-export default Categories_x4;
+export default Categories4x;

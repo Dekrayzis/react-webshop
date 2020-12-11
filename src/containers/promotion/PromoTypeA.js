@@ -1,54 +1,54 @@
 import React from "react";
 import "./promos.scss";
 
-const PromoType_A = () => {
+const PromoTypeA = () => {
   return (
-    <div class="promo-section">
-      <div class="container--fluid">
-        <div class="family_slider" data-section="family-slider">
-          <div class="flex-grid">
+    <div className="promo-section">
+      <div className="container--fluid">
+        <div className="family_slider" data-section="family-slider">
+          <div className="flex-grid">
             <div
-              class="flex-grid__col--lg-5 flex-grid__col--xs-12 lockup lozad"
+              className="flex-grid__col--lg-5 flex-grid__col--xs-12 lockup lozad"
               data-background-image="/assets/Graffiti_Black_2048x.png"
               data-loaded="true"
               style={{
                 backgroundImage: `url(/assets/Graffiti_Black_2048x.png)`,
               }}
             >
-              <div class="famili_lockup">
-                <div class="lockup_header">
-                  <div class="logo">
+              <div className="famili_lockup">
+                <div className="lockup_header">
+                  <div className="logo">
                     <img
                       data-src="/assets/logo.svg"
-                      class="lozad"
+                      className="lozad"
                       src="/assets/logo.svg"
                       data-loaded="true"
+                      alt="some"
                     />
                   </div>
                 </div>
 
-                <div class="lockup_body">
+                <div className="lockup_body">
                   <h1>
-                    meet
-                    <br />
-                    the vicenco
+                    meet the <br />
+                    Vicenco
                     <br /> Family
                   </h1>
                 </div>
 
-                <div class="lockup_footer">
-                  <a href="/blogs/meet-the-family" class="btn--secondary">
+                <div className="lockup_footer">
+                  <a href="/blogs/meet-the-family" className="btn--secondary">
                     More Details
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="flex-grid__col--lg-7 flex-grid__col--xs-12">
-              <ul class="famili_img">
+            <div className="flex-grid__col--lg-7 flex-grid__col--xs-12">
+              <ul className="family_img">
                 <li data-family="">
                   <img
-                    class="lozad"
+                    className="lozad"
                     data-src="/assets/MeetTheFam_CG.png"
                     id="familyImage"
                     alt="action"
@@ -65,4 +65,4 @@ const PromoType_A = () => {
   );
 };
 
-export default PromoType_A;
+export default PromoTypeA;

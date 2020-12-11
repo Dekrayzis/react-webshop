@@ -3,30 +3,36 @@ import { FaYoutube, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import { getPhoneNumber } from "../../helpers";
 import "./footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer
       id="footer"
-      class="lozad"
+      className="lozad"
       style={{ backgroundImage: "url(../assets/Graffiti_Black_2048x.png)" }}
     >
-      <div class="container">
-        <div class="two-thirds auto">
-          <div class="top_footer">
+      <div className="container">
+        <div className="two-thirds auto">
+          <div className="top_footer">
             <div>
-              <div class="flex-grid">
-                <div class="flex-grid__col--xs-4 flex-grid__col--md-4 hide">
-                  <a href="/" class="footer_logo">
-                    <img class="lozad" data-src="/assets/logo.svg" />
-                  </a>
+              <div className="flex-grid">
+                <div className="flex-grid__col--xs-4 flex-grid__col--md-4 hide">
+                  <Link to="/" className="footer_logo">
+                    <img
+                      className="lozad"
+                      data-src="/assets/logo.svg"
+                      alt="logo"
+                    />
+                  </Link>
 
                   <div>
-                    <div class="social-links">
+                    <div className="social-links">
                       <ul>
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.instagram.com/vicenco/?hl=en"
                           >
                             <FaInstagram />
@@ -35,8 +41,9 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.facebook.com/vicenco/"
-                            class="fab fa-facebook-f"
+                            className="fab fa-facebook-f"
                           >
                             <FaFacebookF />
                           </a>
@@ -44,6 +51,7 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://twitter.com/vicenco?lang=en"
                           >
                             <FaTwitter />
@@ -52,8 +60,9 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.youtube.com/channel/UC0j1mZixvnXuBzTrcLy5joQ"
-                            class="fab fa-youtube"
+                            className="fab fa-youtube"
                           >
                             <FaYoutube />
                           </a>
@@ -63,46 +72,48 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div class="flex-grid__col--xs-4 flex-grid__col--md-4">
-                  <div class="footer_nav">
+                <div className="flex-grid__col--xs-4 flex-grid__col--md-4">
+                  <div className="footer_nav">
                     <h5>Who We Are</h5>
                     <ul>
                       <li>
-                        <a href="/collections/all">Shop</a>
+                        <Link to="/store/all-products">Shop</Link>
                       </li>
 
                       <li>
-                        <a href="/">Lifestyle</a>
+                        <Link to="/">Lifestyle</Link>
                       </li>
 
                       <li>
-                        <a href="/pages/loyalty">Loyalty</a>
+                        <Link to="/pages/loyalty">Loyalty</Link>
                       </li>
 
                       <li>
-                        <a href="/blogs/careers">Careers</a>
+                        <Link to="/blogs/careers">Careers</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                <div class="flex-grid__col--xs-4 flex-grid__col--md-4 sm-down--hide">
-                  <a href="/" class="footer_logo">
+                <div className="flex-grid__col--xs-4 flex-grid__col--md-4 sm-down--hide">
+                  <Link to="/" className="footer_logo">
                     <img
-                      class="lozad"
+                      className="lozad"
                       data-src="/assets/logo.svg5"
                       src="/assets/logo.svg"
+                      alt="logo"
                     />
-                  </a>
+                  </Link>
 
                   <div>
-                    <div class="social-links">
+                    <div className="social-links">
                       <ul>
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.instagram.com/vicenco/?hl=en"
-                            class="fab fa-instagram"
+                            className="fab fa-instagram"
                           >
                             <FaInstagram />
                           </a>
@@ -110,8 +121,9 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.facebook.com/vicenco/"
-                            class="fab fa-facebook-f"
+                            className="fab fa-facebook-f"
                           >
                             <FaFacebookF />
                           </a>
@@ -119,8 +131,9 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://twitter.com/vicenco?lang=en"
-                            class="fab fa-twitter"
+                            className="fab fa-twitter"
                           >
                             <FaTwitter />
                           </a>
@@ -128,8 +141,9 @@ const Footer = () => {
                         <li>
                           <a
                             target="_blank"
+                            rel="noreferrer noopener"
                             href="https://www.youtube.com/channel/UC0j1mZixvnXuBzTrcLy5joQ"
-                            class="fab fa-youtube"
+                            className="fab fa-youtube"
                           >
                             <FaYoutube />
                           </a>
@@ -139,27 +153,27 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div class="flex-grid__col--xs-4 flex-grid__col--md-4">
-                  <div class="footer_nav">
+                <div className="flex-grid__col--xs-4 flex-grid__col--md-4">
+                  <div className="footer_nav">
                     <h5>Support</h5>
 
                     <ul>
                       <li>
-                        <a href="/pages/shipping-returns">
+                        <Link to="/shipping-returns">
                           Shipping &amp; Returns
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
-                        <a href="/pages/terms-and-service">Terms and Service</a>
+                        <Link to="/terms-and-service">Terms and Service</Link>
                       </li>
 
                       <li>
-                        <a href="/pages/contact-us">Contact Vicenco®</a>
+                        <Link to="/contact-us">Contact Vicenco®</Link>
                       </li>
 
                       <li>
-                        <a href="/pages/store-locator">Store Locator</a>
+                        <Link to="/store-locator">Store Locator</Link>
                       </li>
                     </ul>
                   </div>
@@ -168,15 +182,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="bottom_footer">
+          <div className="bottom_footer">
             <a href="mailto:support@vicenco.co.uk">support@vicenco.co.uk</a>
-            <a href="javascript:void(0);">{getPhoneNumber()}</a>
+            <a href={`tel:${getPhoneNumber()} `}>{getPhoneNumber()}</a>
             <p>170 S. Green Valley Parkway, Suite 300, Henderson NV 89012</p>
-            <p class="text-center">
-              <a href="/pages/ccpa-privacy-request-form">
-                Do Not Sell My Information
-              </a>
-            </p>
             <p>
               *These statements have not been evaluated by the Food and Drug
               Administration. These products are not intended to diagnose,

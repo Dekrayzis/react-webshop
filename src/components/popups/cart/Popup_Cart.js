@@ -1,9 +1,9 @@
 import React from "react";
 import "./popupCart.scss";
 
-const Popup_Cart = ({ isOpen }) => {
+const PopupCart = ({ isOpen }) => {
   return (
-    <div class={`shopping-cart headerPopup ${isOpen ? "open" : null} `}>
+    <div className={`shopping-cart headerPopup ${isOpen ? "open" : null} `}>
       <div id="CartContainer">
         <p>Your cart is currently empty.</p>
       </div>
@@ -11,4 +11,4 @@ const Popup_Cart = ({ isOpen }) => {
   );
 };
 
-export default Popup_Cart;
+export default PopupCart;

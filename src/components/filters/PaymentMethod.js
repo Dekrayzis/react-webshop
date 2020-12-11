@@ -4,11 +4,11 @@ import Switch from "../elements/switch/Switch";
 
 const PaymentMethod = ({ priceToggle }) => {
   return (
-    <div class="point_toggle">
-      <div class="switchLabel">
-        <span class="cashS">cash</span>
+    <div className="point_toggle">
+      <div className="switchLabel">
+        <span className="cashS">cash</span>
         <Switch callBack={priceToggle} />
-        <span class="pointS">points</span>
+        <span className="pointS">points</span>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 
 //-- Components
-import Carousel from "../components/carousel/Carousel";
-import Categories_x4 from "../containers/categories4/Categories_x4";
+import { Slider } from "../components/carousel/Carousel";
+import Categories4x from "../containers/categories4/Categories4x";
 import FeaturedContent from "../containers/featured/content/FeaturedContent";
-import PromoType_A from "../containers/promotion/PromoType_A";
-import SubscribeForm from "../containers/subscribe/SubscribeForm";
+import PromoTypeA from "../containers/promotion/PromoTypeA";
+import { Images } from "../components/carousel/Images";
 
 //-- Stylesheet
 import "../styles/home.scss";
@@ -13,11 +13,10 @@ import "../styles/home.scss";
 const Home = () => {
   return (
     <div>
-      <Carousel selector="home__carousel" />
-      <Categories_x4 />
+      <Slider slides={Images} selector="home__carousel" />
+      <Categories4x />
       <FeaturedContent />
-      <PromoType_A />
-      <SubscribeForm />
+      <PromoTypeA />
     </div>
   );
 };
